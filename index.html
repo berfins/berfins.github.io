@@ -11,6 +11,7 @@
       color: #333;
       margin: 0;
       padding: 0;
+      font-size: 1.05rem;
     }
 
     nav {
@@ -24,7 +25,7 @@
       margin: 0 1.5rem;
       text-decoration: none;
       color: #a64d79;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: bold;
     }
 
@@ -38,12 +39,12 @@
       display: flex;
       align-items: center;
       gap: 2rem;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     .profile-pic {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -56,13 +57,13 @@
     }
 
     .intro-text .title {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: 500;
       margin-top: 0.4rem;
     }
 
     .intro-text .email {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       margin-top: 0.2rem;
     }
 
@@ -77,12 +78,13 @@
     .buttons a {
       display: inline-block;
       margin-right: 1rem;
+      margin-top: 0.6rem;
       padding: 0.5rem 1rem;
       border-radius: 8px;
       background-color: #a64d79;
       color: white;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
 
     h2 {
@@ -95,30 +97,20 @@
     }
 
     p, li {
-      font-size: 0.95rem;
+      font-size: 1.05rem;
+    }
+
+    .pub-title a {
+      color: #a64d79;
+      text-decoration: none;
+    }
+
+    .pub-title a:hover {
+      text-decoration: underline;
     }
 
     .pub-entry {
       margin-bottom: 2rem;
-    }
-
-    .pub-title {
-      color: #a64d79;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    .pub-buttons a {
-      display: inline-block;
-      margin-right: 0.5rem;
-      margin-top: 0.5rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 6px;
-      background-color: #a64d79;
-      color: white;
-      text-decoration: none;
-      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -137,19 +129,18 @@
           <h1>Berfin Sakallioglu</h1>
           <p class="title">PhD Student</p>
           <p class="email">berfin.sakallioglu@gmail.com</p>
+          <div class="buttons">
+            <a href="https://www.linkedin.com/in/berfin-sakallioglu" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Google Scholar</a>
+          </div>
         </div>
       </div>
-      <p>I’m a PhD student in Applied Data Science and Artificial Intelligence at the University of Trieste, Italy, and a member of the Evolutionary Robotics and Artificial Life Lab. My research focuses on evolutionary computation, with particular interest in optimization and learning. I’ve published work on genetic programming and am especially passionate about university-level teaching.</p>
+      <p>I’m a PhD student in Applied Data Science and Artificial Intelligence at the University of Trieste, Italy, and a member of the Evolutionary Robotics and Artificial Life Lab. My research focuses on evolutionary computation, with particular interest in optimization and learning.</p>
+      <p>I’ve published work on genetic programming and am especially passionate about university-level teaching.</p>
       <p>Outside of academia, I enjoy music. My life's passion is singing, playing guitar and piano. I like learning languages and reading about evolutionary biology, psychology and neuroscience.</p>
-      <div class="buttons">
-        <a href="https://www.linkedin.com/in/berfinsakallioglu/" target="_blank">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=0fENlkQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
-      </div>
     </div>
 
     <div id="cv" class="section">
-  <h2>Research Interests</h2>
-  <p>Evolutionary Computation, Genetic Programming, Machine Learning</p>
 
   <h2>Education</h2>
   <ul>
@@ -185,6 +176,25 @@
 
   </ul>
 
+
+  <h2>Conferences</h2>
+  <ul>
+    <li><strong> ACM Genetic and Evolutionary Computation Conference (GECCO) </strong> - Malaga, Spain, July 2025 </li>
+
+    <li><strong>28th European Conference on Genetic Programming (EuroGP) </strong> – Trieste, Italy, April 2025 </li>
+
+    <li><strong> ACM Genetic and Evolutionary Computation Conference (GECCO) </strong> - Lisbon, Portugal, July 2023 </li>
+
+  </ul>
+
+
+  <h2>Schools</h2>
+  <ul>
+    <li> DataSLO, Summer School on Data Science, Learning and Optimization, Norcia, Italy, June 2025 </li>
+
+
+  </ul>
+
   <h2>Work Experience</h2>
   <ul>
     <li><strong>Research Engineer - IoT, Smart Cities</strong> – Ratio Technologies, Turkey, 2020</li>
@@ -214,55 +224,41 @@
 </div>
 
     <div id="publications" class="section">
-      <h2>Academic Studies</h2>
+      <h2>Publications</h2>
 
       <div class="pub-entry">
 <div class="pub-title"><a href="ttpn.html">Evolving Typed Token Processing Networks</a></div>
         <p>Berfin Sakallioglu, Giorgia Nadizar, Luca Manzoni, Eric Medvet</p>
         <p>Conference Paper, GECCO 2025</p>
-
       </div>
 
-            <div class="pub-entry">
+      <div class="pub-entry">
 <div class="pub-title"><a href="italia.html">Investigating the Mechanisms of Embodied Intelligence with Evolvable Modular Soft Robots</a></div>
-        <p>Berfin Sakallioglu, Giorgia Nadizar, Luca Manzoni, Eric Medvet</p>
+        <p>Eric Medvet, Giorgia Nadizar, Michel El Saliby, Francesco Rusin, Berfin Sakallioglu</p>
         <p>Conference Paper, Ital-IA 2025</p>
       </div>
 
 
-      <div class="pub-entry">
-        <div class="pub-title" onclick="alert('Go to Lamarckian page')">GSGP with Linear Scaling: Darwinian vs. Lamarckian</div>
-        <p>Journal Article, GPEM, 2024</p>
-        <p>Proposed and evaluated a Lamarckian variant of GSGP with linear scaling, showing improved convergence on real-world regression tasks.</p>
-        <div class="pub-buttons">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#">Cite</a>
-          <a href="#">Slides</a>
-        </div>
+            <div class="pub-entry">
+<div class="pub-title"><a href="thesis.html">Geometric Semantic GP with Linear Scaling: Darwinian versus Lamarckian Evolution</a></div>
+        <p>G. Nadizar, B. Sakallioglu, F. Garrow, S. Silva, L. Vanneschi</p>
+        <p> Journal Article, Genetic Programming and Evolvable Machines (GPEM), 2024
+</p>
+      </div>
+
+            <div class="pub-entry">
+<div class="pub-title"><a href="thesis.html">An Investigation of Geometric Semantic GP with Linear Scaling</a></div>
+        <p> G. Nadizar, F. Garrow, B. Sakallioglu, L. Canonne, S. Silva, L. Vanneschi </p>
+        <p> Conference Paper, ACM Genetic and Evolutionary Computation Conference (GECCO), 2023</p>
       </div>
 
       <div class="pub-entry">
-        <div class="pub-title" onclick="alert('Go to GSGP-LS page')">An Investigation of Geometric Semantic GP with Linear Scaling</div>
-        <p>Conference Paper, GECCO 2023</p>
-        <p>Presented a study of GSGP-LS, a system that integrates GSGP and LS. Demonstrated the benefits and risks of integrating linear scaling with GSGP on both synthetic and real-world regression benchmarks.</p>
-        <div class="pub-buttons">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#">Cite</a>
-          <a href="#">Slides</a>
-        </div>
+<div class="pub-title"><a href="thesis.html">A Study of Geometric Semantic Genetic Programming with Linear Scaling</a></div>
+        <p>Berfin Sakallioglu</p>
+        <p>MSc Thesis, 2023</p>
       </div>
 
-      <div class="pub-entry">
-        <div class="pub-title" onclick="alert('Go to MSc Thesis page')">A Study of Geometric Semantic Genetic Programming with Linear Scaling</div>
-        <p>M.Sc. Thesis, 2023</p>
-        <p>A comprehensive analysis and performance study of a GSGP-LS system across a variety of benchmark and real-world problems.</p>
-        <div class="pub-buttons">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#">Cite</a>
-          <a href="#">Slides</a>
+
         </div>
       </div>
     </div>
