@@ -1,322 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Berfin Sakallioglu</title>
-  <style>
-      .pub-entry {
-  background-color: #fff;
-  padding: 1rem 1.5rem;
-  border-radius: 16px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Berfin Sakallioglu</title>
+    <style>
+        .pub-entry {
+            background-color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
 
-.pub-title a {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #a64d79;
-  text-decoration: none;
-}
+        .pub-title a {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #a64d79;
+            text-decoration: none;
+        }
 
-.pub-title a:hover {
-  text-decoration: underline;
-}
+        .pub-title a:hover {
+            text-decoration: underline;
+        }
 
 
-      .edu-line {
-  display: flex;
-  flex-direction: column;
-}
+        .edu-line {
+            display: flex;
+            flex-direction: column;
+        }
 
-.right-group {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.95rem;
-  color: #555;
-  margin-top: 0.2rem;
-}
+        .right-group {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 0.2rem;
+        }
 
-.subline {
-  font-size: 0.95rem;
-  margin-top: 0.2rem;
-  color: #555;
-}
+        .subline {
+            font-size: 0.95rem;
+            margin-top: 0.2rem;
+            color: #555;
+        }
 
-@media (min-width: 600px) {
-  .edu-line {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+        @media (min-width: 600px) {
+            .edu-line {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-  .right-group {
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: flex-end;
-  }
-}
+            .right-group {
+                flex-direction: row;
+                gap: 1.5rem;
+                justify-content: flex-end;
+            }
+        }
 
-      .right-align {
-  float: right;
-  font-weight: normal;
-}
+        .right-align {
+            float: right;
+            font-weight: normal;
+        }
 
-    .pub-title a {
-      color: #a64d79;
-      text-decoration: none;
-    }
+        .pub-title a {
+            color: #a64d79;
+            text-decoration: none;
+        }
 
-    .pub-title a:hover {
-      text-decoration: underline;
-    }
+        .pub-title a:hover {
+            text-decoration: underline;
+        }
 
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fef6f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      font-size: 1.05rem;
-    }
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fef6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 1.05rem;
+        }
 
-    nav {
-      background-color: #fff;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      text-align: center;
-    }
+        nav {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
 
-    nav a {
-      margin: 0 1.5rem;
-      text-decoration: none;
-      color: #a64d79;
-      font-size: 1.4em;
-      font-weight: bold;
-    }
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: #a64d79;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
 
-    .intro {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
 
-    .profile-pic {
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+        .profile-pic {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    .intro-text h1 {
-      font-size: 2.5em;
-      margin: 0;
-      color: #a64d79;
-    }
+        .intro-text h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #a64d79;
+        }
 
-    .intro-text .title {
-      font-size: 1.4em;
-      font-weight: 500;
-      margin-top: 0.4rem;
-    }
+        .intro-text .title {
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-top: 0.4rem;
+        }
 
-    .intro-text .email {
-      font-size: 1.15rem;
-      margin-top: 0.2rem;
-    }
+        .intro-text .email {
+            font-size: 1.15rem;
+            margin-top: 0.2rem;
+        }
 
-    .buttons {
-      margin-top: 0.6rem;
-    }
+        .buttons {
+            margin-top: 0.6rem;
+        }
 
-    .buttons a {
-      display: inline-block;
-      margin-right: 1rem;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      background-color: #a64d79;
-      color: white;
-      text-decoration: none;
-      font-size: 1rem;
-    }
+        .buttons a {
+            display: inline-block;
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #a64d79;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
 
-    .section {
-      display: none;
-    }
+        .section {
+            display: none;
+        }
 
-    .section.active {
-      display: block;
-    }
+        .section.active {
+            display: block;
+        }
 
-    h2 {
-      color: #b3698e;
-      margin-top: 2rem;
-    }
+        h2 {
+            color: #b3698e;
+            margin-top: 2rem;
+        }
 
-    ul {
-      padding-left: 1.2rem;
-    }
+        ul {
+            padding-left: 1.2rem;
+        }
 
-    p, li {
-      font-size: 1.05rem;
-    }
+        p, li {
+            font-size: 1.05rem;
+        }
 
-    .pub-entry {
-      margin-bottom: 2rem;
-    }
-  </style>
+        .pub-entry {
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <nav>
+<nav>
     <a href="#home" onclick="showTab('home')">Hello!</a>
     <a href="#cv" onclick="showTab('cv')">CV</a>
     <a href="#publications" onclick="showTab('publications')">Publications</a>
-  </nav>
+</nav>
 
-  <div class="container">
+<div class="container">
     <div id="home" class="section active">
-      <div class="intro">
-        <img src="berfin.jpg" alt="Berfin Sakallioglu" class="profile-pic" />
-        <div class="intro-text">
-          <h1>Berfin Sakallioglu</h1>
-          <p class="title">PhD Student</p>
-          <p class="email">berfin.sakallioglu@gmail.com</p>
-            <p class="email">berfin.sakallioglu@phd.units.it </p>
-          <div class="buttons">
-            <a href="https://www.linkedin.com/in/berfinsakallioglu/" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=0fENlkQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
-          </div>
+        <div class="intro">
+            <img src="berfin.jpg" alt="Berfin Sakallioglu" class="profile-pic"/>
+            <div class="intro-text">
+                <h1>Berfin Sakallioglu</h1>
+                <p class="title">PhD Student</p>
+                <p class="email">berfin.sakallioglu@gmail.com</p>
+                <p class="email">berfin.sakallioglu@phd.units.it </p>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/berfinsakallioglu/" target="_blank">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=0fENlkQAAAAJ&hl=en&oi=ao" target="_blank">Google
+                        Scholar</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <p>I’m a PhD student in Applied Data Science and Artificial Intelligence at the University of Trieste, Italy, and a member of the Evolutionary Robotics and Artificial Life Lab. My research focuses on evolutionary computation, with particular interest in optimization and learning. I’ve published work on genetic programming and am especially passionate about university-level teaching.</p>
-      <p>Outside of academia, I enjoy music. My life's passion is singing, playing guitar and piano. I like learning languages and reading about evolutionary biology, psychology and neuroscience.</p>
+        <p>I’m a PhD student in Applied Data Science and Artificial Intelligence at the University of Trieste, Italy,
+            and a member of the Evolutionary Robotics and Artificial Life Lab. My research focuses on evolutionary
+            computation, with particular interest in optimization and learning. I’ve published work on genetic
+            programming and am especially passionate about university-level teaching.</p>
+        <p>Outside of academia, I enjoy music. My life's passion is singing, playing guitar and piano. I like learning
+            languages and reading about evolutionary biology, psychology and neuroscience.</p>
     </div>
 
     <div id="cv" class="section">
-      <h2>Education</h2>
-      <ul>
-<li>
-  <div class="edu-line">
-    <strong>PhD – Applied Data Science and Artificial Intelligence</strong>
-    <div class="right-group">
-      <span>University of Trieste, Italy</span>
-      <span>2024–Present</span>
-    </div>
-  </div>
-  <div class="subline">Research Field: Evolutionary Computation</div>
+        <h2>Education</h2>
+        <ul>
+            <li><strong>PhD – Applied Data Science and Artificial Intelligence</strong>, University of Trieste, 2024-Present
+                <br/>Research Field: Evolutionary Computation
 </li>
-        <li><strong>MSc</strong> – Data Science & Advanced Analytics, NOVA Information Management School, Portugal (2020–2023)<br/>Thesis: A Study of Geometric Semantic Genetic Programming with Linear Scaling (20/20) | GPA: 18/20</li>
-        <li><strong>BSc</strong> – Electrical & Electronics Engineering, Hacettepe University, Turkey (2015–2020)<br/>Honors Student | GPA: 3.21/4.00</li>
-      </ul>
+            <li><strong>MSc – Data Science & Advanced Analytics</strong>, NOVA Information Management School, Portugal, 2020–2023
+                <br/>Thesis: A Study of Geometric Semantic Genetic Programming with Linear Scaling (20/20) | GPA: 18/20
+            </li>
+            <li><strong>BSc – Electrical & Electronics Engineering</strong>, Hacettepe University, Turkey, 2015–2020
+                <br/>Honors Student | GPA: 3.21/4.00
+            </li>
+        </ul>
 
-              <h2>Conferences</h2>
-      <ul>
-        <li><strong> ACM Genetic and Evolutionary Computation Conference (GECCO) </strong> - Malaga, Spain, July 2025 </li>
-        <li><strong> 28th European Conference on Genetic Programming (EuroGP) </strong> – Trieste, Italy, April 2025 </li>
-        <li><strong> ACM Genetic and Evolutionary Computation Conference (GECCO) </strong> - Lisbon, Portugal, July 2023 </li>
-      </ul>
+        <h2>Conferences</h2>
+        <ul>
+            <li> ACM Genetic and Evolutionary Computation Conference (GECCO)  - Malaga, Spain, July
+                2025
+            </li>
+            <li> 28th European Conference on Genetic Programming (EuroGP)  – Trieste, Italy, April 2025
+            </li>
+            <li>ACM Genetic and Evolutionary Computation Conference (GECCO) - Lisbon, Portugal, July
+                2023
+            </li>
+        </ul>
 
-      <h2>Schools</h2>
-      <ul>
-        <li> DataSLO, Summer School on Data Science, Learning and Optimization, Norcia, Italy, June 2025 </li>
-      </ul>
+        <h2>Schools</h2>
+        <ul>
+            <li> DataSLO - Summer School on Data Science, Learning and Optimization - Norcia, Italy, June 2025</li>
+        </ul>
 
-      <h2>Achievements</h2>
-      <ul>
-        <li>FCT PhD Scholarship (3rd Place National Rank) - Awarded by Portugal’s national research agency FCT.</li>
-        <li>Proposal: Evolutionary Computation for Explainable and Interpretable Medical Decision Making</li>
-      </ul>
-
-
-      <h2>Teaching Experience</h2>
-      <p><strong>Invited Lecturer </strong> – NOVA IMS, Portugal <br/> (with average student perception 5.8/6 across all courses)</p>
-      <ul>
-        <li>Computational Intelligence for Optimization 2022, 2023, 2024</li>
-          Contents: Optimization Problems, Fitness Landscapes, Hill Climbing, Simulated Annealing, Genetic Algorithms, Advanced Genetic Algorithm Methods, Particle Swarm Optimization.
-
-        <li>Introduction to Computational Thinking & Data Science 2024</li>
-          Contents: Computational Thinking, Problem Decomposition and Abstraction, Optimization Problems, A Gentle Introduction to NLP, Introduction to Graph Theory.
-
-        <li>Algorithms & Data Structures 2023</li>
-          Contents: Recursion, Time Complexity, Searching Algorithms, Sorting Algorithms, Data Structures, Trees.
-
-        <li>Introduction to Programming (Python) 2021, 2022, 2023</li>
-          Contents: Data Types, Expressions, Input/Output Facilities, Conditional Instructions, Iterative Instructions, Lists, Functions.
-
-        <li>Big Data Analysis & Marketing 2023,2024</li>
-          Contents: Hadoop, HDFS, Hive, Functional Programming, Map Reduce with Docker. Spark, SQL, ML, Data Pipelines, Graphframes, Streaming with Databricks.
-
-      </ul>
+        <h2>Achievements</h2>
+        <ul>
+            <li>FCT PhD Scholarship (3rd Place National Rank 2024) - Awarded by Portugal’s national research agency FCT.</li>
+            <li>Proposal: <em>Evolutionary Computation for Explainable and Interpretable Medical Decision Making</em></li>
+        </ul>
 
 
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Research Engineer - IoT, Smart Cities</strong> – Ratio Technologies, Turkey, 2020</li>
-        <li><strong>Intern - Simulink, MATLAB</strong> – TUSAŞ Aerospace Industries, Turkey, 2018</li>
-        <li><strong>Intern - GUI Development</strong> – ASELSAN Electronics, Turkey, 2018</li>
-      </ul>
+        <h2>Teaching Experience</h2>
+        <p><strong>Invited Lecturer </strong> – NOVA IMS, Portugal <br/> (with average student perception 5.8/6 across
+            all courses)</p>
+        <em>Designed and delivered MSc and BSc level course contents and assessments for 500+ students, supporting learning and evaluation.</em>
 
-      <h2>Extracurriculars & Skills</h2>
-      <ul>
-        <li>Senior Volunteer – EvoStar Conference, Trieste, 2025</li>
-        <li>Student Volunteer – Genetic and Evolutionary Computation Conference, Lisbon, 2023</li>
-        <li>General Secretary of IEEE Student Branch, Hacettepe University (Exemplary Branch Award), Ankara, 2016</li>
-        <li>Languages: Turkish (Native), English (C1), Portuguese (A2), Italian (A1)</li>
-      </ul>
-      <p><strong>Skills:</strong> Python (Optimization Algorithms, Evolutionary Computation, Machine Learning, Deep Learning, Data Mining, Text Mining). Former experience with several Database Management Systems (MongoDB, Neo4j, Redis) and SQL for Big Data Analytics, Modeling and Management. Besides, Dash with Python for Data Visualization.</p>
-      <p>Research, teaching, presentation and verbal communication, adaptability, multitasking.</p>
-      <p><strong>Interests:</strong> Musical performing; singing, guitar, piano. Translatorship. Evolutionary biology, psychology, neuroscience.</p>
-      <p><strong>Languages:</strong> Turkish (Native), English (C1), Portuguese (B1), Italian (A1). </p>
+        <ul>
+            <li><strong>Computational Intelligence for Optimization</strong> - 2022, 2023, 2024</li>
+            Contents: Optimization Problems, Fitness Landscapes, Hill Climbing, Simulated Annealing, Genetic Algorithms,
+            Advanced Genetic Algorithm Methods, Particle Swarm Optimization.
 
-      </div>
+            <li><strong>Introduction to Computational Thinking & Data Science</strong> - 2024</li>
+            Contents: Computational Thinking, Problem Decomposition and Abstraction, Optimization Problems, A Gentle
+            Introduction to NLP, Introduction to Graph Theory.
+
+            <li><strong>Algorithms & Data Structures</strong> - 2023</li>
+            Contents: Recursion, Time Complexity, Searching Algorithms, Sorting Algorithms, Data Structures, Trees.
+
+            <li><strong>Introduction to Programming (Python)</strong> - 2021, 2022, 2023</li>
+            Contents: Data Types, Expressions, Input/Output Facilities, Conditional Instructions, Iterative
+            Instructions, Lists, Functions.
+
+            <li><strong>Big Data Analysis & Marketing</strong> - 2023, 2024</li>
+            Contents: Hadoop, HDFS, Hive, Functional Programming, Map Reduce with Docker. Spark, SQL, ML, Data
+            Pipelines, Graphframes, Streaming with Databricks.
+
+        </ul>
+
+
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Research Engineer</strong> - <em>IoT, Smart Cities</em> – Ratio Technologies, Turkey, 2020</li>
+            Participated in Internet of Things applications & transformations on smart city projects for several cities in Turkey including the capital, Ankara. Conducted research on smart energy technologies for a TUBITAK (The Scientific and Technological Research Council of Turkey) project.
+
+            <li><strong>Intern </strong> - <em>Simulink, MATLAB</em> – TUSAŞ Aerospace Industries, Turkey, 2018</li>
+            Researched model-based design and control engineering. Assisted a simulation development.
+
+            <li><strong>Intern </strong> - <em>GUI Development</em> – ASELSAN Electronics, Turkey, 2018</li>
+            Developed a Graphical User Interface using CVI/LabWindows for the Test Systems and Process Design department. Presented the product several times to the department and enhanced it to respond to the department’s requests.
+
+        </ul>
+
+        <h2>Extracurriculars & Skills</h2>
+        <ul>
+            <li>Senior Volunteer – <em>EvoStar Conference</em>, <em>Trieste, 2025</em></li>
+            <li>Student Volunteer – <em>Genetic and Evolutionary Computation Conference</em>, Lisbon, 2023</li>
+            <li>General Secretary of IEEE Student Branch, <em>Hacettepe University</em> (Exemplary Branch Award), Ankara, 2016
+            </li>
+            </ul>
+
+        <p><strong>Skills:</strong> Python <em>(Optimization Algorithms, Evolutionary Computation, Machine Learning, Deep
+            Learning, Data Mining, Text Mining)</em>. Former experience with several Database Management Systems (MongoDB,
+            Neo4j, Redis) and SQL for Big Data Analytics, Modeling and Management. Besides, Dash with Python for Data
+            Visualization.</p>
+        <p>Research, teaching, presentation and verbal communication, adaptability, multitasking.</p>
+        <p><strong>Interests:</strong> Musical performing; singing, guitar, piano. Translatorship. Evolutionary biology,
+            psychology, neuroscience.</p>
+        <p><strong>Languages:</strong> Turkish (Native), English (C1), Portuguese (B1), Italian (A1). </p>
+
+    </div>
 
     <div id="publications" class="section">
-      <h2>Publications</h2>
-      <div class="pub-entry">
-        <div class="pub-title"><a href="sakallioglu2025ttpn.html">Evolving Typed Token Processing Networks</a></div>
-        <p>Berfin Sakallioglu, Giorgia Nadizar, Luca Manzoni, Eric Medvet</p>
-        <p><strong>Conference Paper</strong>, ACM Genetic and Evolutionary Computation Conference (GECCO), 2025</p>
-      </div>
-      <div class="pub-entry">
-        <div class="pub-title"><a href="medvet2025invest.html">Investigating the Mechanisms of Embodied Intelligence with Evolvable Modular Soft Robots</a></div>
-        <p>Eric Medvet, Giorgia Nadizar, Michel El Saliby, Francesco Rusin, Berfin Sakallioglu</p>
-        <p><strong>Conference Paper</strong>, 5th Convegno Nazionale CINI sull'Intelligenza Artificiale (Ital-IA), 2025</p>
-      </div>
-      <div class="pub-entry">
-        <div class="pub-title"><a href="nadizar2024lamarck.html">Geometric Semantic GP with Linear Scaling: Darwinian versus Lamarckian Evolution</a></div>
-        <p>G. Nadizar, B. Sakallioglu, F. Garrow, S. Silva, L. Vanneschi</p>
-        <p><strong>Journal Article</strong>, Genetic Programming and Evolvable Machines (GPEM), 2024</p>
-      </div>
-      <div class="pub-entry">
-        <div class="pub-title"><a href="nadizar2023gsgpls.html">An Investigation of Geometric Semantic GP with Linear Scaling</a></div>
-        <p>G. Nadizar, F. Garrow, B. Sakallioglu, L. Canonne, S. Silva, L. Vanneschi</p>
-        <p><strong>Conference Paper</strong>, ACM Genetic and Evolutionary Computation Conference (GECCO), 2023</p>
-      </div>
-      <div class="pub-entry">
-        <div class="pub-title"><a href="sakallioglu2023mscthesis.html">A Study of Geometric Semantic Genetic Programming with Linear Scaling</a></div>
-        <p>Berfin Sakallioglu</p>
-        <p><strong>MSc Thesis</strong>, 2023</p>
-      </div>
+        <h2>Publications</h2>
+        <div class="pub-entry">
+            <div class="pub-title"><a href="sakallioglu2025ttpn.html">Evolving Typed Token Processing Networks</a></div>
+            <p>Berfin Sakallioglu, Giorgia Nadizar, Luca Manzoni, Eric Medvet</p>
+            <p><strong>Conference Paper</strong>, ACM Genetic and Evolutionary Computation Conference (GECCO), 2025</p>
+        </div>
+        <div class="pub-entry">
+            <div class="pub-title"><a href="medvet2025invest.html">Investigating the Mechanisms of Embodied Intelligence
+                with Evolvable Modular Soft Robots</a></div>
+            <p>Eric Medvet, Giorgia Nadizar, Michel El Saliby, Francesco Rusin, Berfin Sakallioglu</p>
+            <p><strong>Conference Paper</strong>, 5th Convegno Nazionale CINI sull'Intelligenza Artificiale (Ital-IA),
+                2025</p>
+        </div>
+        <div class="pub-entry">
+            <div class="pub-title"><a href="nadizar2024lamarck.html">Geometric Semantic GP with Linear Scaling:
+                Darwinian versus Lamarckian Evolution</a></div>
+            <p>G. Nadizar, B. Sakallioglu, F. Garrow, S. Silva, L. Vanneschi</p>
+            <p><strong>Journal Article</strong>, Genetic Programming and Evolvable Machines (GPEM), 2024</p>
+        </div>
+        <div class="pub-entry">
+            <div class="pub-title"><a href="nadizar2023gsgpls.html">An Investigation of Geometric Semantic GP with
+                Linear Scaling</a></div>
+            <p>G. Nadizar, F. Garrow, B. Sakallioglu, L. Canonne, S. Silva, L. Vanneschi</p>
+            <p><strong>Conference Paper</strong>, ACM Genetic and Evolutionary Computation Conference (GECCO), 2023</p>
+        </div>
+        <div class="pub-entry">
+            <div class="pub-title"><a href="sakallioglu2023mscthesis.html">A Study of Geometric Semantic Genetic
+                Programming with Linear Scaling</a></div>
+            <p>Berfin Sakallioglu</p>
+            <p><strong>MSc Thesis</strong>, 2023</p>
+        </div>
     </div>
-  </div>
+</div>
 
-  <script>
+<script>
     function showTab(tabId) {
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(section => {
-        section.classList.remove('active');
-      });
-      document.getElementById(tabId).classList.add('active');
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
     }
-  </script>
+</script>
 </body>
 </html>
