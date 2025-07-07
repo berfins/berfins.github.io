@@ -39,6 +39,14 @@
     }
   </style>
 </head>
+
+<script>
+  function toggleCitation(event) {
+    event.preventDefault();
+    const box = document.getElementById('citation-box');
+    box.style.display = box.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
 <body>
   <h1>A Study of Geometric Semantic Genetic Programming with Linear Scaling
 </h1>
@@ -78,8 +86,15 @@ its risk of overfitting in some specific cases.<p>
   <div class="buttons">
     <a href="https://run.unl.pt/bitstream/10362/152098/4/TCDMAA1321.pdf" target="_blank">PDF</a>
     <a href="https://run.unl.pt/handle/10362/152098" target="_blank" >Publisher Version</a>
-    <a href="#">Cite</a>
-    <a href="#">Slides</a>
+    <a href="https://drive.google.com/file/d/1n4jWRAVTPRrSJ-ACxVzhvkFMExGg3JNh/view?usp=sharing", target="_blank">Slides</a>
+    <pre id="citation-box" style="display:none; background-color:#f4f4f4; padding:1rem; border-radius:8px; margin-top:1rem; font-size:0.85rem; overflow-x: auto;">
+@mastersthesis{sakallioglu2023study,
+  title={A Study of Geometric Semantic Genetic Programming with Linear Scaling},
+  author={Sakallioglu, Berfin},
+  year={2023},
+  school={Universidade NOVA de Lisboa (Portugal)}
+}
+    </pre>
   </div>
 </body>
 </html>
