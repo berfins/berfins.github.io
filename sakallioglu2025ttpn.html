@@ -38,17 +38,17 @@
 
     h1 {
       color: #a64d79;
+      margin-bottom: 0.5rem;
     }
 
-    h2 {
-      color: #b3698e;
-      margin-top: 2rem;
+    .buttons {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     .buttons a {
       display: inline-block;
       margin-right: 1rem;
-      margin-top: 1rem;
       padding: 0.5rem 1rem;
       border-radius: 8px;
       background-color: #a64d79;
@@ -57,19 +57,17 @@
       font-size: 0.9rem;
     }
 
+    h2 {
+      color: #b3698e;
+      margin-top: 2rem;
+    }
+
     p {
       font-size: 1rem;
       line-height: 1.6;
     }
   </style>
 </head>
-<script>
-  function toggleCitation(event) {
-    event.preventDefault();
-    const box = document.getElementById('citation-box');
-    box.style.display = box.style.display === 'none' ? 'block' : 'none';
-  }
-</script>
 <body>
 
   <!-- Styled navigation matching index.html -->
@@ -81,9 +79,10 @@
 
   <h1>Evolving Typed Token Processing Networks</h1>
 
+  <!-- ✅ Buttons now directly below the title -->
   <div class="buttons">
     <a href="https://drive.google.com/file/d/1vyMUjPUmIq6ThXN7v3BYCRsf2S8Q7CAs/view" target="_blank">PDF</a>
-    <a href="#">Slides</a>
+    <a href="#" target="_blank">Slides</a>
   </div>
 
   <h2>Authors</h2>
@@ -94,7 +93,6 @@
 
   <h2>Abstract</h2>
   <p>We propose a novel, type-consistent representation for programs manipulating arbitrary data types, that we call typed token processing networks (TTPNs). A TTPN is a network of interconnected stateless gates defining typed ports and processing functions: during the execution, data flows through the network as typed tokens carrying values. TTPNs favor interpretability as they can visually reveal the overall structure of a program and also highlight the way data is processed at runtime—enabling decomposability and simulatability, respectively. Moreover, like other graph representations, TTPNs enable component reuse. We evolve programs in the form of TTPNs from examples, i.e., we do program synthesis, with a simple genetic algorithm and ad hoc genetic operators. Our preliminary results show successful evolution of simple programs from small example sets involving diverse types, though some instances fail. We hypothesize that the particularly rugged fitness landscape imposed by our representation and, more in general, by the program synthesis scenario, may hinder convergence. We propose some directions for tackling these issues.</p>
-
 
 </body>
 </html>
