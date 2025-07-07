@@ -39,16 +39,44 @@
     }
   </style>
 </head>
+<script>
+  function toggleCitation(event) {
+    event.preventDefault();
+    const box = document.getElementById('citation-box');
+    box.style.display = box.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
 <body>
   <h1>Geometric Semantic GP with Linear Scaling: Darwinian versus Lamarckian Evolution
 
+    <div class="buttons">
+    <a href="https://drive.google.com/file/d/1V0J_aMcNWy1MgVSznnaGpFo0DmdyOvLg/view" target="_blank">PDF</a>
+    <a href="https://link.springer.com/article/10.1007/s10710-024-09488-0", target="_blank">Publisher Version</a>
+  <div class="cite-container">
+    <a href="#" onclick="toggleCitation(event)">Cite</a>
+    <pre id="citation-box" style="display:none; background-color:#f4f4f4; padding:1rem; border-radius:8px; margin-top:1rem; font-size:0.85rem; overflow-x: auto;">
+@article{nadizar2024geometric,
+  title={{Geometric semantic GP with linear scaling: Darwinian versus Lamarckian evolution}},
+  author={Nadizar, Giorgia and Sakallioglu, Berfin and Garrow, Fraser and Silva, Sara and Vanneschi, Leonardo},
+  journal={{Genetic Programming and Evolvable Machines}},
+  volume={25},
+  number={2},
+  pages={1--24},
+  year={2024},
+  publisher={Springer},
+  doi={10.1007/s10710-024-09488-0}
+}
+    </pre>
+  </div>
+    </div>
 
 </h1>
   <h2>Authors</h2>
   <p>G. Nadizar, B. Sakallioglu, F. Garrow, S. Silva, L. Vanneschi
 
 </p>
-  <h2>Type</h2>
+  <h2>Publication Info</h2>
   <p>Journal Article, Genetic Programming and Evolvable Machines (GPEM), 2024
 
 </p>
@@ -57,10 +85,5 @@
 Geometric Semantic Genetic Programming (GSGP) has shown notable success in symbolic regression with the introduction of Linear Scaling (LS). This achievement stems from the synergy of the geometric semantic genetic operators of GSGP with the scaling of the individuals for computing their fitness, which favours programs with a promising behaviour. However, the initial combination of GSGP and LS (GSGP-LS) underutilised the potential of LS, scaling individuals only for fitness evaluation, neglecting to incorporate improvements into their genetic material. In this paper we propose an advancement, GSGP with Lamarckian LS (GSGP-LLS), wherein we update the individuals in the population with their scaling coefficients in a Lamarckian fashion, i.e., by inheritance of acquired traits. We assess GSGP-LS and GSGP-LLS against standard GSGP for the task of symbolic regression on five hand-tailored benchmarks and six real-life problems. On the former ones, GSGP-LS and GSGP-LLS both consistently improve GSGP, though with no clear global superiority between them. On the real-world problems, instead, GSGP-LLS steadily outperforms GSGP-LS, achieving faster convergence and superior final performance. Notably, even in cases where LS induces overfitting on challenging problems, GSGP-LLS surpasses GSGP-LS, due to its slower and more localised optimisation steps.
 <p>
 
-  <div class="buttons">
-    <a href="https://drive.google.com/file/d/1V0J_aMcNWy1MgVSznnaGpFo0DmdyOvLg/view" target="_blank">PDF</a>
-    <a href="https://link.springer.com/article/10.1007/s10710-024-09488-0", target="_blank">Publisher Version</a>
-    <a href="#">Cite</a>
-  </div>
 </body>
 </html>

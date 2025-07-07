@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Berfin Sakallioglu</title>
   <style>
+
+      .edu-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.subline {
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+  color: #555;
+}
+
+@media (min-width: 600px) {
+  .edu-line {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-group {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: flex-end;
+  }
+}
+
       .right-align {
   float: right;
   font-weight: normal;
@@ -124,7 +158,7 @@
 </head>
 <body>
   <nav>
-    <a href="#home" onclick="showTab('home')">Me</a>
+    <a href="#home" onclick="showTab('home')">Hello!</a>
     <a href="#cv" onclick="showTab('cv')">CV</a>
     <a href="#publications" onclick="showTab('publications')">Publications</a>
   </nav>
@@ -136,8 +170,7 @@
         <div class="intro-text">
           <h1>Berfin Sakallioglu</h1>
           <p class="title">PhD Student</p>
-          <p class="email">berfin.sakallioglu@gmail.com</p>
-            <p class="email">berfin.sakallioglu@phd.units.it</p>
+          <p class="email">berfin.sakallioglu@gmail.com & berfin.sakallioglu@phd.units.it </p>
           <div class="buttons">
             <a href="https://www.linkedin.com/in/berfinsakallioglu/" target="_blank">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=0fENlkQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
@@ -152,11 +185,16 @@
       <h2>Education</h2>
       <ul>
 <li>
-  <strong>PhD – Applied Data Science and Artificial Intelligence</strong>
-  <span class="right-align">University of Trieste, Italy</span><br/>
-  Research Field: Evolutionary Computation
-  <span class="right-align">2024–Present</span>
+  <div class="edu-line">
+    <strong>PhD – Applied Data Science and Artificial Intelligence</strong>
+    <div class="right-group">
+      <span>University of Trieste, Italy</span>
+      <span>2024–Present</span>
+    </div>
+  </div>
+  <div class="subline">Research Field: Evolutionary Computation</div>
 </li>
+
         <li><strong>MSc</strong> – Data Science & Advanced Analytics, NOVA Information Management School, Portugal (2020–2023)<br/>Thesis: A Study of Geometric Semantic Genetic Programming with Linear Scaling (20/20) | GPA: 18/20</li>
         <li><strong>BSc</strong> – Electrical & Electronics Engineering, Hacettepe University, Turkey (2015–2020)<br/>Honors Student | GPA: 3.21/4.00</li>
       </ul>
@@ -218,22 +256,22 @@
     <div id="publications" class="section">
       <h2>Publications</h2>
       <div class="pub-entry">
-        <div class="pub-title"><a href="ttpn.html">Evolving Typed Token Processing Networks</a></div>
+        <div class="pub-title"><a href="sakallioglu2025ttpn.html">Evolving Typed Token Processing Networks</a></div>
         <p>Berfin Sakallioglu, Giorgia Nadizar, Luca Manzoni, Eric Medvet</p>
         <p>Conference Paper, GECCO 2025</p>
       </div>
       <div class="pub-entry">
-        <div class="pub-title"><a href="italia.html">Investigating the Mechanisms of Embodied Intelligence with Evolvable Modular Soft Robots</a></div>
+        <div class="pub-title"><a href="medvet2025invest.html">Investigating the Mechanisms of Embodied Intelligence with Evolvable Modular Soft Robots</a></div>
         <p>Eric Medvet, Giorgia Nadizar, Michel El Saliby, Francesco Rusin, Berfin Sakallioglu</p>
         <p>Conference Paper, Ital-IA 2025</p>
       </div>
       <div class="pub-entry">
-        <div class="pub-title"><a href="gpem2024.html.html">Geometric Semantic GP with Linear Scaling: Darwinian versus Lamarckian Evolution</a></div>
+        <div class="pub-title"><a href="nadizar2024lamarck.html">Geometric Semantic GP with Linear Scaling: Darwinian versus Lamarckian Evolution</a></div>
         <p>G. Nadizar, B. Sakallioglu, F. Garrow, S. Silva, L. Vanneschi</p>
         <p>Journal Article, Genetic Programming and Evolvable Machines (GPEM), 2024</p>
       </div>
       <div class="pub-entry">
-        <div class="pub-title"><a href="gecco2023.html.html">An Investigation of Geometric Semantic GP with Linear Scaling</a></div>
+        <div class="pub-title"><a href="nadizar2023gsgpls.html">An Investigation of Geometric Semantic GP with Linear Scaling</a></div>
         <p>G. Nadizar, F. Garrow, B. Sakallioglu, L. Canonne, S. Silva, L. Vanneschi</p>
         <p>Conference Paper, ACM GECCO, 2023</p>
       </div>
