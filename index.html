@@ -136,12 +136,23 @@ a:hover {
             font-size: 1.05rem;
         }
 
-        nav {
-            background-color: #fff;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            text-align: center;
-        }
+nav {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 1.1em;
+  }
+}
+
 
         nav a {
             margin: 0 1.5rem;
