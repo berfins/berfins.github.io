@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evolving Typed Token Processing Networks</title>
   <style>
+
     .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem;
 }
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fef6f9;
-      color: #333;
-      margin: 0;
-      padding: 2rem;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fef6f9;
+  color: #333;
+  margin: 0;
+  padding: 0; /* remove internal padding from body */
+}
 
     nav {
       background-color: #fff;
@@ -82,7 +82,8 @@
         <a href="index.html#cv">CV</a>
 
   </nav>
-<div class="container">
+  <div class="container">
+
   <h1>Evolving Typed Token Processing Networks</h1>
 
   <!-- ✅ Buttons now directly below the title -->
@@ -99,6 +100,7 @@
 
   <h2>Abstract</h2>
   <p>We propose a novel, type-consistent representation for programs manipulating arbitrary data types, that we call typed token processing networks (TTPNs). A TTPN is a network of interconnected stateless gates defining typed ports and processing functions: during the execution, data flows through the network as typed tokens carrying values. TTPNs favor interpretability as they can visually reveal the overall structure of a program and also highlight the way data is processed at runtime—enabling decomposability and simulatability, respectively. Moreover, like other graph representations, TTPNs enable component reuse. We evolve programs in the form of TTPNs from examples, i.e., we do program synthesis, with a simple genetic algorithm and ad hoc genetic operators. Our preliminary results show successful evolution of simple programs from small example sets involving diverse types, though some instances fail. We hypothesize that the particularly rugged fitness landscape imposed by our representation and, more in general, by the program synthesis scenario, may hinder convergence. We propose some directions for tackling these issues.</p>
-</div>
+  </div>
+
 </body>
 </html>
