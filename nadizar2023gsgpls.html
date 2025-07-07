@@ -11,6 +11,12 @@
             color: #999;
             padding: 2rem 0;
         }
+                .container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
     body {
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #fef6f9;
@@ -90,6 +96,7 @@
         <a href="index.html#cv">CV</a>
 
   </nav>
+  <div class="container">
 
   <h1>An Investigation of Geometric Semantic GP with Linear Scaling
   <div class="buttons">
@@ -118,6 +125,8 @@
   <h2>Abstract</h2>
 <p>Geometric semantic genetic programming (GSGP) and linear scaling (LS) have both, independently, shown the ability to outperform standard genetic programming (GP) for symbolic regression. GSGP uses geometric semantic genetic operators, different from the standard ones, without altering the fitness, while LS modifies the fitness without altering the genetic operators. So far, these two methods have already been joined together in only one practical application. However, to the best of our knowledge, a methodological study on the pros and cons of integrating these two methods has never been performed. In this paper, we present a study of GSGP-LS, a system that integrates GSGP and LS. The results, obtained on five hand-tailored benchmarks and six real-life problems, indicate that GSGP-LS outperforms GSGP in the majority of the cases, confirming the expected benefit of this integration. However, for some particularly hard datasets, GSGP-LS overfits training data, being outperformed by GSGP on unseen data. Additional experiments using standard GP, with and without LS, confirm this trend also when standard crossover and mutation are employed. This contradicts the idea that LS is always beneficial for GP, warning the practitioners about its risk of overfitting in some specific cases.
 <p>
+      </div>
+
 <footer>
     © 2025, Berfin Sakallioglu.
 </footer>
