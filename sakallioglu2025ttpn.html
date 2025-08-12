@@ -98,7 +98,7 @@ body {
     <a href="https://drive.google.com/file/d/13cOtgHcDZ2nDVcFms-LNmLYCXU21XjgX/view?usp=sharing" target="_blank">Slides</a>
             <a href="#" onclick="toggleCitation(event)">Cite</a>
 
-    <pre id="citation-box" style="display:none; background-color:#f4f4f4; padding:1rem; border-radius:8px; margin-top:1rem; font-size:0.85rem; overflow-x: auto;">
+    <pre id="citation-box" style="display:none; background-color:#f4f4f4; padding:1rem; border-radius:8px; margin-top:1rem; font-size:0.85rem; overflow-x: auto; color:#a64d79;">
 @inproceedings{10.1145/3712255.3734315,
 author = {Sakallioglu, Berfin and Nadizar, Giorgia and Manzoni, Luca and Medvet, Eric},
 title = {Evolving Typed Token Processing Networks},
@@ -131,5 +131,18 @@ series = {GECCO '25 Companion}
 <footer>
     © 2025, Berfin Sakallioglu.
 </footer>
+
+<script>
+function toggleCitation(event) {
+  event.preventDefault(); // stop link from jumping
+  const box = document.getElementById('citation-box');
+  if (box.style.display === 'none' || box.style.display === '') {
+    box.style.display = 'block';
+  } else {
+    box.style.display = 'none';
+  }
+}
+</script>
+
 </body>
 </html>
