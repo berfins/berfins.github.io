@@ -5,45 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Berfin Sakallioglu</title>
     <style>
-        /* ========================================
-           COLOR VARIABLES - Change colors here!
-           ======================================== */
-        :root {
-            /* Main brand colors */
-            --primary-color: #c0a9bd;        /* Main accent (links, buttons, h1) */
-            --primary-hover: #c0a9bd;        /* Link hover color */
-            --secondary-color: #94A7AE;      /* H2 headings */
+        .intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
 
-            /* Background colors */
-            --bg-body: #f4f2f3;              /* Page background */
-            --bg-white: #c0a9bd;                /* Cards, nav background */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+}
 
-            /* Text colors */
-            --text-main: #664930;               /* Main text */
-            --text-secondary: #997E67;          /* Subtitles, dates */
-            --text-muted: #997E67;              /* Footer */
-            --text-button: #f4f2f3;            /* Button text */
+@media (min-width: 600px) {
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+  }
+}
 
-            /* Shadows */
-            --shadow-subtle: 0 2px 6px rgba(0, 0, 0, 0.05);
-            --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.05);
-            --shadow-strong: 0 2px 8px rgba(0, 0, 0, 0.1);
+@media (max-width: 599px) {
+  .intro-text h1 { font-size: 1.8em; }
+  .intro-text .title { font-size: 1.2em; }
+  .intro-text .email { font-size: 1rem; }
+  body, p { font-size: 1rem; }
+  .buttons a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a64d79;
+  text-decoration: underline;
+}
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #999;
+            padding: 2rem 0;
         }
 
-        /* ========================================
-           BASE STYLES
-           ======================================== */
+
+        li {
+            margin-bottom: 0.8rem; /* or try 1rem for more space */
+        }
+
         html {
-            scroll-padding-top: 160px;
+            scroll-padding-top: 160px; /* Adjust based on your navbar height */
+        }
+
+        .pub-entry {
+            background-color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .pub-title a {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #a64d79;
+            text-decoration: none;
+        }
+
+        .pub-title a:hover {
+            text-decoration: underline;
+        }
+
+
+        .edu-line {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-group {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 0.2rem;
+        }
+
+        .subline {
+            font-size: 0.95rem;
+            margin-top: 0.2rem;
+            color: #555;
+        }
+
+        @media (min-width: 600px) {
+            .edu-line {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .right-group {
+                flex-direction: row;
+                gap: 1.5rem;
+                justify-content: flex-end;
+            }
+        }
+
+        .right-align {
+            float: right;
+            font-weight: normal;
+        }
+
+        .pub-title a {
+            color: #a64d79;
+            text-decoration: none;
+        }
+
+        .pub-title a:hover {
+            text-decoration: underline;
         }
 
         body {
             font-family: 'Helvetica Neue', sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-main);
+            background-color: #fef6f9;
+            color: #333;
             margin: 0;
             padding: 0;
             font-size: 1.05rem;
+        }
+
+nav {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 1.1em;
+  }
+}
+
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: #a64d79;
+            font-size: 1.4em;
+            font-weight: bold;
         }
 
         .container {
@@ -52,51 +168,25 @@
             padding: 2rem;
         }
 
-        /* ========================================
-           NAVIGATION
-           ======================================== */
-        nav {
-            background-color: var(--bg-white);
-            padding: 1rem 2rem;
-            box-shadow: var(--shadow-medium);
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        nav a {
-            margin: 0 1.5rem;
-            text-decoration: none;
-            color: var(--primary-color);
-            font-size: 1.4em;
-            font-weight: bold;
-        }
-
-        /* ========================================
-           INTRO SECTION
-           ======================================== */
         .intro {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             gap: 2rem;
             margin-bottom: 2rem;
         }
 
         .profile-pic {
-            width: 150px;
-            height: 150px;
+            width: 240px;
+            height: 240px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: var(--shadow-strong);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .intro-text h1 {
             font-size: 2.5em;
             margin: 0;
-            color: var(--primary-color);
+            color: #a64d79;
         }
 
         .intro-text .title {
@@ -119,58 +209,12 @@
             margin-right: 1rem;
             padding: 0.5rem 1rem;
             border-radius: 8px;
-            background-color: var(--primary-color);
-            color: var(--text-button);
+            background-color: #a64d79;
+            color: white;
             text-decoration: none;
             font-size: 1rem;
         }
 
-        /* ========================================
-           LINKS
-           ======================================== */
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--primary-hover);
-            text-decoration: underline;
-        }
-
-        .accent-link {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .accent-link:hover,
-        .accent-link:focus-visible {
-            text-decoration: underline;
-        }
-
-        /* ========================================
-           HEADINGS & TEXT
-           ======================================== */
-        h2 {
-            color: var(--secondary-color);
-            margin-top: 2rem;
-        }
-
-        p, li {
-            font-size: 1.05rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-        }
-
-        /* ========================================
-           SECTIONS
-           ======================================== */
         .section {
             display: none;
         }
@@ -179,106 +223,34 @@
             display: block;
         }
 
-        /* ========================================
-           PUBLICATION ENTRIES
-           ======================================== */
+        h2 {
+            color: #b3698e;
+            margin-top: 2rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        p, li {
+            font-size: 1.05rem;
+        }
+
         .pub-entry {
-            background-color: var(--bg-white);
-            padding: 1rem 1.5rem;
-            border-radius: 16px;
-            margin-bottom: 1.5rem;
-            box-shadow: var(--shadow-subtle);
+            margin-bottom: 2rem;
         }
 
-        .pub-title a {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+        .accent-link {
+  color: #a64d79;
+  text-decoration: none;
+}
+.accent-link:hover,
+.accent-link:focus-visible {
+  text-decoration: underline;
+}
 
-        .pub-title a:hover {
-            text-decoration: underline;
-        }
-
-        /* ========================================
-           EDUCATION SECTION
-           ======================================== */
-        .edu-line {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .right-group {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            margin-top: 0.2rem;
-        }
-
-        .subline {
-            font-size: 0.95rem;
-            margin-top: 0.2rem;
-            color: var(--text-secondary);
-        }
-
-        .right-align {
-            float: right;
-            font-weight: normal;
-        }
-
-        /* ========================================
-           FOOTER
-           ======================================== */
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            padding: 2rem 0;
-        }
-
-        /* ========================================
-           RESPONSIVE DESIGN
-           ======================================== */
-        @media (min-width: 600px) {
-            .profile-pic {
-                width: 240px;
-                height: 240px;
-            }
-
-            .edu-line {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .right-group {
-                flex-direction: row;
-                gap: 1.5rem;
-                justify-content: flex-end;
-            }
-        }
-
-        @media (max-width: 599px) {
-            .intro-text h1 { font-size: 1.8em; }
-            .intro-text .title { font-size: 1.2em; }
-            .intro-text .email { font-size: 1rem; }
-            body, p { font-size: 1rem; }
-            .buttons a {
-                font-size: 0.9rem;
-                padding: 0.4rem 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            nav a {
-                font-size: 1.1em;
-            }
-        }
     </style>
 </head>
-
 <body>
 <nav>
     <a href="#home" onclick="showTab('home')">Hello!</a>
