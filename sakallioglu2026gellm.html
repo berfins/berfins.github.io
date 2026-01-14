@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    #citation-box {
+  color: #FAF0E6 !important;
+  font-family: monospace; /* keep code style */
+}
+
+            footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #E4D0C4;
+            padding: 2rem 0;
+        }
+
+    .container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #FAF0E6;
+  color: #47352D;
+  margin: 0;
+  padding: 0; /* remove internal padding from body */
+}
+
+    nav {
+      background-color: #BCC0B3;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #526457;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #C2ADA0;
+      margin-bottom: 0.5rem;
+    }
+
+    .buttons {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background-color: #E9DCCF;
+      color: #869285;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      color: #869285;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .accent-link {
+  color: #C2ADA0;
+  text-decoration: none;
+}
+.accent-link:hover,
+.accent-link:focus-visible {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Styled navigation matching index.html -->
+  <nav>
+    <a href="index.html#home">Hello!</a>
+    <a href="index.html#publications">Publications</a>
+        <a href="index.html#cv">CV</a>
+
+  </nav>
+  <div class="container">
+
+  <h1>Combining Grammatical Evolution with LLM-based Local Search to Improve Interpretability
+
+  <!-- ✅ Buttons now directly below the title -->
+</h1>
+
+
+  <h2>Authors</h2>
+  <p>Berfin Sakallioglu, Frederico J.J.B. Santos, Daniel Parra, Yuxin Qiu, Miguel Nicolau, Leonardo Trujillo and J. Ignacio Hidalgo</p>
+
+  <h2>Publication Info</h2>
+  <p>Conference Paper, 28th European Conference on Genetic Programming (EvoStar), Toulouse, France, 2026 </p>
+
+  <h2>Abstract</h2>
+  <p>Interpretability is increasingly crucial in artificial intelligence, especially in domains like medicine, where genetic programming, particularly grammatical evolution (GE), can produce models that are potentially interpretable. However, optimizing for predictive accuracy often results in complex expressions that can reduce interpretability. Large language models (LLMs) are also being applied to simplify and interpret complex model expressions. We propose incorporating an LLM-guided local search operator into GE to enhance model interpretability in symbolic regression and test this approach for medical prediction. The operator leverages the semantic reasoning and domain knowledge encoded in LLMs to refine candidate expressions through a parallel search mechanism complementary to traditional fitness-driven evolution. The experiments, conducted on a clinical dataset for glycated hemoglobin prediction, showed that three LLM-guided variants improved interpretability compared to baseline GE, with two showing signs of possible overfitting and the other generalizing better. LLM-generated individuals demonstrated evolutionary viability throughout evolution and direct contribution to the final solutions. Comparison of proprietary and local LLMs revealed challenges with adherence to instructions and creative exploration in smaller models. These results indicate that the proposed approach is a promising strategy for obtaining simpler, more interpretable, and more plausible models.</p>
+  </div>
+<footer>
+    © 2025, Berfin Sakallioglu.
+</footer>
+
+<script>
+function toggleCitation(event) {
+  event.preventDefault(); // stop link from jumping
+  const box = document.getElementById('citation-box');
+  if (box.style.display === 'none' || box.style.display === '') {
+    box.style.display = 'block';
+  } else {
+    box.style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
