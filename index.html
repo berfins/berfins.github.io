@@ -4,296 +4,307 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Berfin Sakallioglu</title>
-    <style>
-        /* ========================================
-           COLOR VARIABLES - Change colors here!
-          # https://madebymelody.co/earthy-boho-color-palette-hex-codes/
-          # https://www.schemecolor.com/calm-beach.php
-           ======================================== */
-        :root {
-            /* Main brand colors */
-            --primary-color: #C2ADA0;        /* Main accent (links, buttons, h1) */
-            --primary-hover: #526457;        /* Link hover color */
-            --secondary-color: #D0D5CF;      /* H2 headings */
+<style>
+    /* ========================================
+       🎨 COLOR PALETTE - Change ALL colors here!
+       ======================================== */
+:root {
+    /* ===== BACKGROUNDS ===== */
+    --bg-body: #0A0E27;                         /* Deep midnight blue */
+    --bg-nav: #141B3D;                          /* Slightly lighter midnight */
+    --bg-publication: rgba(156, 74, 255, 0.15); /* Purple tint cards */
+    --bg-button: #9C4AFF;                       /* Vibrant purple buttons */
 
-            /* Background colors */
-            --bg-body: #FAF0E6;              /* Page background */
-            --bg-white: #BCC0B3;                /* Cards, nav background */
+    /* ===== TEXT COLORS ===== */
+    --text-main: #F8F9FA;                       /* Crisp white text */
+    --text-light: #B8BCC8;                      /* Muted light gray */
+    --text-footer: #B8BCC8;                     /* Footer text */
+    --text-project: #00E5FF;                    /* Electric cyan projects */
 
-            /* Text colors */
-            --text-main: #47352D;               /* Main text */
-            --text-secondary: #E4D0C4;          /* Subtitles, dates */
-            --text-muted: #E4D0C4;              /* Footer */
-            --text-button: white;            /* Button text */
+    /* ===== ACCENT COLORS ===== */
+    --color-primary: #00E5FF;                   /* Electric cyan - H1, H2 */
+    --color-secondary: #9C4AFF;                 /* Vibrant purple */
+    --color-tertiary: #FF5C8D;                  /* Energetic pink */
 
-            /* Shadows */
-            --shadow-subtle: 0 2px 6px rgba(0, 0, 0, 0.05);
-            --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.05);
-            --shadow-strong: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
+    /* ===== LINK COLORS ===== */
+    --link-accent: #00E5FF;                     /* Electric cyan links */
+    --link-hover: #FF5C8D;                      /* Pink hover */
 
-        /* ========================================
-           BASE STYLES
-           ======================================== */
-        html {
-            scroll-padding-top: 160px;
-        }
+    /* ===== SHADOWS ===== */
+    --shadow-subtle: 0 2px 6px rgba(0, 229, 255, 0.1);
+    --shadow-medium: 0 2px 8px rgba(156, 74, 255, 0.2);
+    --shadow-strong: 0 4px 12px rgba(0, 229, 255, 0.25);
+}
 
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            font-size: 1.05rem;
-        }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem;
-        }
 
-        /* ========================================
-           NAVIGATION
-           ======================================== */
-        nav {
-            background-color: var(--bg-white);
-            padding: 1rem 2rem;
-            box-shadow: var(--shadow-medium);
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
 
-        nav a {
-            margin: 0 1.5rem;
-            text-decoration: none;
-            color: #526457;
-            font-size: 1.4em;
-            font-weight: bold;
-        }
+    /* ========================================
+       BASE STYLES
+       ======================================== */
+    html {
+        scroll-padding-top: 160px;
+    }
 
-        /* ========================================
-           INTRO SECTION
-           ======================================== */
-        .intro {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
+    body {
+        font-family: 'Helvetica Neue', sans-serif;
+        background-color: var(--bg-body);
+        color: var(--text-main);
+        margin: 0;
+        padding: 0;
+        font-size: 1.05rem;
+    }
 
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+    nav {
+        background-color: var(--bg-nav);
+        padding: 1rem 2rem;
+        box-shadow: var(--shadow-medium);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 1.5rem;
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    /* ========================================
+       INTRO SECTION
+       ======================================== */
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: var(--shadow-strong);
+    }
+
+    .intro-text h1 {
+        font-size: 2.5em;
+        margin: 0;
+        color: var(--color-primary);
+    }
+
+    .intro-text .title {
+        font-size: 1.4em;
+        font-weight: 500;
+        margin-top: 0.4rem;
+    }
+
+    .intro-text .email {
+        font-size: 1.15rem;
+        margin-top: 0.2rem;
+    }
+
+    .buttons {
+        margin-top: 0.6rem;
+    }
+
+    .buttons a {
+        display: inline-block;
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        background-color: var(--bg-button);
+        color: var(--color-tertiary);
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    /* ========================================
+       LINKS
+       ======================================== */
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    .accent-link {
+        color: var(--link-accent);
+        text-decoration: none;
+    }
+
+    .accent-link:hover,
+    .accent-link:focus-visible {
+        text-decoration: underline;
+    }
+
+    /* ========================================
+       HEADINGS & TEXT
+       ======================================== */
+    h2 {
+        color: var(--color-primary);
+        margin-top: 2rem;
+    }
+
+    p, li {
+        font-size: 1.05rem;
+    }
+
+    ul {
+        padding-left: 1.2rem;
+    }
+
+    li {
+        margin-bottom: 0.8rem;
+    }
+
+    /* ========================================
+       SECTIONS
+       ======================================== */
+    .section {
+        display: none;
+    }
+
+    .section.active {
+        display: block;
+    }
+
+    /* ========================================
+       PUBLICATION ENTRIES
+       ======================================== */
+    .pub-entry {
+        background-color: var(--bg-publication);
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+        margin-bottom: 1.5rem;
+        box-shadow: var(--shadow-subtle);
+    }
+
+    .pub-title a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--color-secondary);
+        text-decoration: none;
+    }
+
+    .pub-title a:hover {
+        text-decoration: underline;
+    }
+
+    /* ========================================
+       PROJECT NAMES (Schools section)
+       ======================================== */
+    .project-name {
+        color: var(--text-project);
+        font-weight: 400;
+    }
+
+    .project-name a {
+        color: var(--text-project);
+        text-decoration: none;
+    }
+
+    .project-name a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    /* ========================================
+       EDUCATION SECTION
+       ======================================== */
+    .edu-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-group {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.95rem;
+        color: var(--text-light);
+        margin-top: 0.2rem;
+    }
+
+    .subline {
+        font-size: 0.95rem;
+        margin-top: 0.2rem;
+        color: var(--text-light);
+    }
+
+    .right-align {
+        float: right;
+        font-weight: normal;
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--text-footer);
+        padding: 2rem 0;
+    }
+
+    /* ========================================
+       RESPONSIVE DESIGN
+       ======================================== */
+    @media (min-width: 600px) {
         .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: var(--shadow-strong);
+            width: 240px;
+            height: 240px;
         }
 
-        .intro-text h1 {
-            font-size: 2.5em;
-            margin: 0;
-            color: var(--primary-color);
-        }
-
-        .intro-text .title {
-            font-size: 1.4em;
-            font-weight: 500;
-            margin-top: 0.4rem;
-        }
-
-        .intro-text .email {
-            font-size: 1.15rem;
-            margin-top: 0.2rem;
-        }
-
-        .buttons {
-            margin-top: 0.6rem;
-        }
-
-        .buttons a {
-            display: inline-block;
-            margin-right: 1rem;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            background-color: #E9DCCF;
-            color: #869285;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        /* ========================================
-           LINKS
-           ======================================== */
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--primary-hover);
-            text-decoration: underline;
-        }
-
-        .accent-link {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .accent-link:hover,
-        .accent-link:focus-visible {
-            text-decoration: underline;
-        }
-
-        /* ========================================
-           HEADINGS & TEXT
-           ======================================== */
-        h2 {
-            color: #C2ADA0;
-            margin-top: 2rem;
-        }
-
-        p, li {
-            font-size: 1.05rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-        }
-
-        /* ========================================
-           SECTIONS
-           ======================================== */
-        .section {
-            display: none;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        /* ========================================
-           PUBLICATION ENTRIES
-           ======================================== */
-        .pub-entry {
-            background-color: rgba(231, 208, 208, 0.7);
-            padding: 1rem 1.5rem;
-            border-radius: 16px;
-            margin-bottom: 1.5rem;
-            box-shadow: var(--shadow-subtle);
-        }
-
-        .pub-title a {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #526457;
-            text-decoration: none;
-        }
-
-        .pub-title a:hover {
-            text-decoration: underline;
-        }
-
-        /* ========================================
-           EDUCATION SECTION
-           ======================================== */
         .edu-line {
-            display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .right-group {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            margin-top: 0.2rem;
+            flex-direction: row;
+            gap: 1.5rem;
+            justify-content: flex-end;
         }
+    }
 
-        .subline {
-            font-size: 0.95rem;
-            margin-top: 0.2rem;
-            color: var(--text-secondary);
-        }
-
-        .right-align {
-            float: right;
-            font-weight: normal;
-        }
-
-        /* ========================================
-           FOOTER
-           ======================================== */
-        footer {
-            text-align: center;
+    @media (max-width: 599px) {
+        .intro-text h1 { font-size: 1.8em; }
+        .intro-text .title { font-size: 1.2em; }
+        .intro-text .email { font-size: 1rem; }
+        body, p { font-size: 1rem; }
+        .buttons a {
             font-size: 0.9rem;
-            color: var(--text-muted);
-            padding: 2rem 0;
+            padding: 0.4rem 0.8rem;
         }
+    }
 
-        /* ========================================
-           RESPONSIVE DESIGN
-           ======================================== */
-        @media (min-width: 600px) {
-            .profile-pic {
-                width: 240px;
-                height: 240px;
-            }
-
-            .edu-line {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .right-group {
-                flex-direction: row;
-                gap: 1.5rem;
-                justify-content: flex-end;
-            }
+    @media (max-width: 480px) {
+        nav a {
+            font-size: 1.1em;
         }
+    }
+</style>
 
-        @media (max-width: 599px) {
-            .intro-text h1 { font-size: 1.8em; }
-            .intro-text .title { font-size: 1.2em; }
-            .intro-text .email { font-size: 1rem; }
-            body, p { font-size: 1rem; }
-            .buttons a {
-                font-size: 0.9rem;
-                padding: 0.4rem 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            nav a {
-                font-size: 1.1em;
-            }
-        }
-
-        .project-name {
-    color: #8B7A73;  /* or adjust to your preference */
-    font-weight: 400;
-}
-.project-name a {
-    color: #8B7A73;
-    text-decoration: none;
-}
-
-.project-name a:hover {
-    color: var(--primary-hover);
-    text-decoration: underline;
-}
-
-    </style>
 </head>
 
 <body>
