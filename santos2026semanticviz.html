@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combining GE with LLM-based Local Search - Berfin Sakallioglu</title>
+    <title>SemanticViz: Analyzing Semantic Space Exploration of Ensemble Methods
+</title>
     <style>
         /* ========================================
            🎨 COLOR PALETTE - Matching main site
@@ -199,38 +200,22 @@
 
 <div class="container">
     <!-- Title -->
-    <h1>Combining Grammatical Evolution with LLM-based Local Search to Improve Interpretability</h1>
+    <h1>SemanticViz: Analyzing Semantic Space Exploration of Ensemble Methods
+</h1>
 
     <!-- Buttons -->
-    <div class="buttons">
-        <a href="https://drive.google.com/file/d/1ZcBt-u6rBjQeHIOpNe0GTlincS8o3oaP/view?usp=sharing" target="_blank">PDF</a>
-        <a href="https://drive.google.com/file/d/1VacKRJ86mplUDaZVkLXAoUK0918I1IsL/view?usp=sharing" target="_blank">Slides</a>
-        <a href="https://drive.google.com/file/d/1cnO2e5LIH2C_WD8xAhHrF6ytivI4A5Vw/view?usp=sharing" target="_blank">Poster</a>
-        <a href="#" onclick="toggleCitation(event)">Cite</a>
-        <a href="https://link.springer.com/chapter/10.1007/978-3-032-23607-4_14" target="_blank">Publisher Version</a>
-    </div>
-
-    <pre id="citation-box">@inproceedings{sakallioglu2026combining,
-  title={Combining Grammatical Evolution with LLM-based Local Search to Improve Interpretability},
-  author={Sakallioglu, Berfin and Santos, Frederico JJB and Parra, Daniel and Qiu, Yuxin and Nicolau, Miguel and Trujillo, Leonardo and Hidalgo, J Ignacio},
-  booktitle={International Conference on the Applications of Evolutionary Computation (Part of EvoStar)},
-  pages={217--233},
-  year={2026},
-  organization={Springer}
-}</pre>
 
     <!-- Authors -->
     <h2>Authors</h2>
-    <p>Berfin Sakallioglu, Frederico J.J.B. Santos, Daniel Parra, Yuxin Qiu, Miguel Nicolau, Leonardo Trujillo and J. Ignacio Hidalgo</p>
+    <p>Frederico J.J.B. Santos, Jose Manuel Muñoz Contreras, Berfin Sakallioglu, Alberto Tonda, Leonardo Trujillo</p>
 
     <!-- Publication Info -->
     <h2>Publication Info</h2>
-    <p><strong>Conference Paper</strong>, 28th European Conference on Genetic Programming (EvoStar), Toulouse, France, 2026 </p>
-    <p style="color: var(--link-hover); font-weight: bold;"> Best Poster Award - Runner Up </p>
+    <p><strong>Conference Paper</strong>, PPSN - The International Conference on Parallel Problem Solving From Nature, Trento, Italy, 2026 <strong style="color: #EA526F;">(to appear)</strong></p>
 
     <!-- Abstract -->
     <h2>Abstract</h2>
-    <p>Interpretability is increasingly crucial in artificial intelligence, especially in domains like medicine, where genetic programming, particularly grammatical evolution (GE), can produce models that are potentially interpretable. However, optimizing for predictive accuracy often results in complex expressions that can reduce interpretability. Large language models (LLMs) offer a promising approach to simplify and interpret complex model expressions. Here, we propose incorporating an LLM-guided local search operator into GE to enhance model interpretability in symbolic regression and test this approach for medical prediction. The operator leverages the semantic reasoning and domain knowledge encoded in LLMs to refine candidate expressions through a parallel search mechanism complementary to traditional fitness-driven evolution. Our experiments, conducted on a clinical dataset for glycated hemoglobin prediction, showed that three LLM-guided variants improve interpretability compared to baseline GE, with two showing signs of possible overfitting and the other generalizing better. LLM-generated individuals demonstrated evolutionary viability throughout evolution and direct contribution to the final solutions. Comparison of proprietary and local LLMs revealed challenges with adherence to instructions and creative exploration in smaller models. These results indicate that the proposed approach is a promising strategy for obtaining simpler, more interpretable, and more plausible models.</p>
+    <p>Ensembles of decision trees and Geometric Semantic Genetic Programming (GSGP) both build accurate regressors by aggregating weak learners, yet their exploration of the model’s output semantic space differs in ways that performance metrics cannot reveal. We pair interactive 2D and 3D dimensionality-reduction visualizations with a quantitative metric framework spanning two families: trajectory metrics (path length, straightness, target alignment, step-size schedule, effective dimensionality) and coverage metrics (cloud spread, centroid-to-target, total variance), and use it to compare six ensemble methods across five tabular regression benchmarks. We compare kPCA-cosine, t-SNE, and UMAP qualitatively and via trustworthiness and continuity scores, adopting kPCA-cosine for the visualizations; distance-sensitive metrics are computed in the original semantic space. Three contrasts emerge. Batch Random Forest and Extra Trees weak learners cluster tightly near the target; boosting weak learners (XGBoost, LightGBM, Gradient Boosting) cluster tightly far from it; the GSGP population spans an order-of-magnitude wider neighborhood than either. GSGP learning trajectories are roughly 3× longer than boosting’s, in essentially uncorrelated steps perpendicular to the toward-target direction, and this regime holds population-wide rather than only for the eventual elite. These contrasts identify GSGP-style exploration paired with boosted-tree exploitation as a promising hybrid direction.</p>
 </div>
 
 <!-- Footer -->
