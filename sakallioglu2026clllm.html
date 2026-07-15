@@ -204,16 +204,29 @@
     <!-- Buttons -->
     <div class="buttons">
         <a href="https://drive.google.com/file/d/1W6R4-Ema5pJcy0E29D4uJW_bpGIizAYK/view?usp=sharing" target="_blank">PDF</a>
+        <a href="https://dl.acm.org/doi/10.1145/3795095.3805152" target="_blank">Publisher Version</a>
         <a href="https://arxiv.org/abs/2602.10891" target="_blank">arXiv</a>
         <a href="#" onclick="toggleCitation(event)">Cite</a>
     </div>
 
     <!-- Citation Box -->
-    <pre id="citation-box">@article{sakallioglu2026interactive,
-  title={Interactive LLM-assisted Curriculum Learning for Multi-Task Evolutionary Policy Search},
-  author={Sakallioglu, Berfin and Nadizar, Giorgia and Medvet, Eric},
-  journal={arXiv preprint arXiv:2602.10891},
-  year={2026}
+    <pre id="citation-box">
+        @inproceedings{10.1145/3795095.3805152,
+author = {Sakallioglu, Berfin and Nadizar, Giorgia and Medvet, Eric},
+title = {Interactive LLM-Assisted Curriculum Learning for Multi-Task Evolutionary Policy Search},
+year = {2026},
+isbn = {9798400724879},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3795095.3805152},
+doi = {10.1145/3795095.3805152},
+abstract = {Multi-task policy search is a challenging problem because policies are required to generalize beyond training cases. Curriculum learning has proven to be effective in this setting, as it introduces complexity progressively. However, designing effective curricula is labor-intensive and requires extensive domain expertise. LLM-based curriculum generation has only recently emerged as a potential solution, but was limited to operate in static, offline modes without leveraging real-time feedback from the optimizer. Here we propose an interactive LLM-assisted framework for online curriculum generation, where the LLM adaptively designs training cases based on real-time feedback from the evolutionary optimization process. We investigate how different feedback modalities, ranging from numeric metrics alone to combinations with plots and behavior visualizations, influence the LLM ability to generate meaningful curricula. Through a 2D robot navigation case study, tackled with genetic programming as optimizer, we evaluate our approach against static LLM-generated curricula and expert-designed baselines. We show that interactive curriculum generation outperforms static approaches, with multimodal feedback incorporating both progression plots and behavior visualizations yielding performance competitive with expert-designed curricula. This work contributes to understanding how LLMs can serve as interactive curriculum designers for embodied AI systems, with potential extensions to broader evolutionary robotics applications.},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+pages = {718–726},
+numpages = {9},
+keywords = {large language models, quality diversity, genetic programming},
+location = {Centro Internacional de Convenciones CIC-ANDE, San Jose, Costa Rica},
+series = {GECCO '26}
 }</pre>
 
     <!-- Authors -->
